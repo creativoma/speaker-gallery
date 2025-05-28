@@ -32,11 +32,6 @@ This project is an exercise in recreating the interactive speaker gallery compon
 
 ```
 src/
-├── assets/
-│   └── images/
-│       ├── speaker1.webp
-│       ├── speaker2.webp
-│       └── speaker3.webp
 ├── components/
 │   ├── speaker-list/
 │   │   └── speaker-list.tsx
@@ -49,6 +44,15 @@ src/
 │   └── useSpeakerData.ts
 ├── types/
 │   └── speaker.ts
+├── assets/
+│   └── images/
+│       ├── speaker1.webp
+│       ├── speaker2.webp
+│       └── speaker3.webp
+├── icons/
+│   ├── linkedin.tsx
+│   ├── twitter.tsx
+│   └── loader.tsx
 ├── speaker-gallery.tsx
 └── main.tsx
 ```
