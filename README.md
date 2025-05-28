@@ -48,9 +48,9 @@ src/
 │   └── speaker-profile/
 │       └── speaker-profile.tsx
 ├── hooks/
-│   └── useTeamData.ts
+│   └── useSpeakerData.ts
 ├── types/
-│   └── team.ts
+│   └── speaker.ts
 ├── speaker-gallery.tsx
 └── main.tsx
 ```
