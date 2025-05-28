@@ -1,6 +1,7 @@
 import React from 'react'
 import { type SpeakerMember } from '@/types/speaker'
-import { TwitterIcon, LinkedInIcon } from '@/components/speaker-member/icons'
+import { TwitterIcon } from '@/icons/twitter'
+import { LinkedInIcon } from '@/icons/linkedin'
 import { motion } from 'motion/react'
 
 interface SocialLinksProps {
