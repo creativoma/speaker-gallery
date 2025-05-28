@@ -1,14 +1,12 @@
 # Speaker Gallery Component
 
+[View Live Demo](https://speaker-gallery.vercel.app/)
+
 ![Speaker Gallery](public/screenshot-app.webp)
 
 A React component recreation of the **Featured Speakers** section from [Vercel Ship 2025](https://vercel.com/ship) landing page.
 
 ![Speaker Gallery](public/screenshot-vercel.webp)
-
-## 🚀 Live Demo
-
-[View Live Demo](#)
 
 ## 📖 Overview
 
