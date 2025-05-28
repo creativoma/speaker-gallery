@@ -1,4 +1,4 @@
-export interface TeamMember {
+export interface SpeakerMember {
   id: string
   name: string
   role: string
