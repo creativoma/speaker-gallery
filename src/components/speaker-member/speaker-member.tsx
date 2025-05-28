@@ -1,14 +1,14 @@
 import React from 'react'
-import { type TeamMember as TeamMemberType } from '@/types/team'
+import { type SpeakerMember as SpeakerMemberType } from '@/types/speaker'
 import { SocialLinks } from '@/components/speaker-member/social-links'
 
-export interface TeamMemberProps {
-  member: TeamMemberType
+export interface SpeakerMemberProps {
+  member: SpeakerMemberType
   isActive: boolean
   onHover: () => void
 }
 
-export const TeamMember: React.FC<TeamMemberProps> = ({
+export const SpeakerMember: React.FC<SpeakerMemberProps> = ({
   member,
   isActive = false,
   onHover,

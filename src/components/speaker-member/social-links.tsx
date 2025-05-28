@@ -1,10 +1,10 @@
 import React from 'react'
-import { type TeamMember } from '@/types/team'
+import { type SpeakerMember } from '@/types/speaker'
 import { TwitterIcon, LinkedInIcon } from '@/components/speaker-member/icons'
 import { motion } from 'motion/react'
 
 interface SocialLinksProps {
-  links: TeamMember['socialLinks']
+  links: SpeakerMember['socialLinks']
 }
 
 export const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => {

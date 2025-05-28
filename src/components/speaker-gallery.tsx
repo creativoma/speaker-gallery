@@ -1,9 +1,9 @@
 import { type FC } from 'react'
-import { TeamList } from '@/components/speaker-list/speaker-list'
-import { useTeamData } from '@/hooks/useTeamData'
+import { SpeakerList } from '@/components/speaker-list/speaker-list'
+import { useSpeakerData } from '@/hooks/useSpeakerData'
 
 export const SpeakerGallery: FC = () => {
-  const { members, loading } = useTeamData()
+  const { members, loading } = useSpeakerData()
 
   if (loading) {
     return (
@@ -35,7 +35,7 @@ export const SpeakerGallery: FC = () => {
 
   return (
     <div className="mx-auto w-7xl overflow-hidden border border-zinc-800">
-      <TeamList members={members} />
+      <SpeakerList members={members} />
     </div>
   )
 }

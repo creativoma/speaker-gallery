@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-import { type TeamMember as TeamMemberType } from '@/types/team'
-import { TeamMember } from '@/components/speaker-member/speaker-member'
-import { TeamProfile } from '@/components/speaker-profile/speaker-profile'
+import { type SpeakerMember as SpeakerMemberType } from '@/types/speaker'
+import { SpeakerMember } from '@/components/speaker-member/speaker-member'
+import { SpeakerProfile } from '@/components/speaker-profile/speaker-profile'
 
-interface TeamListProps {
-  members: TeamMemberType[]
+interface SpeakerListProps {
+  members: SpeakerMemberType[]
 }
 
-export const TeamList: React.FC<TeamListProps> = ({ members }) => {
-  const [selectedMember, setSelectedMember] = useState<TeamMemberType | null>(
+export const SpeakerList: React.FC<SpeakerListProps> = ({ members }) => {
+  const [selectedMember, setSelectedMember] = useState<SpeakerMemberType | null>(
     members[0] || null
   )
 
-  const handleMemberHover = (member: TeamMemberType) => {
+  const handleMemberHover = (member: SpeakerMemberType) => {
     setSelectedMember(member)
   }
 
@@ -20,7 +20,7 @@ export const TeamList: React.FC<TeamListProps> = ({ members }) => {
     <div className="flex items-stretch divide-x divide-zinc-800">
       <div className="w-3/5 min-w-0 divide-y divide-zinc-800">
         {members.map((member) => (
-          <TeamMember
+          <SpeakerMember
             key={member.id}
             member={member}
             isActive={selectedMember?.id === member.id}
@@ -30,7 +30,7 @@ export const TeamList: React.FC<TeamListProps> = ({ members }) => {
       </div>
 
       <div className="relative w-2/5 flex-shrink-0">
-        {selectedMember && <TeamProfile member={selectedMember} />}
+        {selectedMember && <SpeakerProfile member={selectedMember} />}
       </div>
     </div>
   )

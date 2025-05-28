@@ -1,12 +1,12 @@
 import { type FC } from 'react'
-import { type TeamMember } from '@/types/team'
+import { type SpeakerMember } from '@/types/speaker'
 import { motion } from 'motion/react'
 
-interface TeamProfileProps {
-  member: TeamMember
+interface SpeakerProfileProps {
+  member: SpeakerMember
 }
 
-export const TeamProfile: FC<TeamProfileProps> = ({ member }) => {
+export const SpeakerProfile: FC<SpeakerProfileProps> = ({ member }) => {
   return (
     <div className="absolute inset-0">
       {member.image ? (
