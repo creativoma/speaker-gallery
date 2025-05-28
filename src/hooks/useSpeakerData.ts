@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react'
-import { type TeamMember } from '@/types/team'
+import { type SpeakerMember } from '@/types/speaker'
 
 import speaker0 from '@/assets/images/speaker0.webp'
 import speaker1 from '@/assets/images/speaker1.webp'
 import speaker2 from '@/assets/images/speaker2.webp'
 
-export const useTeamData = () => {
-  const [members, setMembers] = useState<TeamMember[]>([])
+export const useSpeakerData = () => {
+  const [members, setMembers] = useState<SpeakerMember[]>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const mockData: TeamMember[] = [
+    const mockData: SpeakerMember[] = [
       {
         id: crypto.randomUUID(),
         name: 'WILLIAM RANCH',
