@@ -8,9 +8,8 @@ interface SpeakerListProps {
 }
 
 export const SpeakerList: React.FC<SpeakerListProps> = ({ members }) => {
-  const [selectedMember, setSelectedMember] = useState<SpeakerMemberType | null>(
-    members[0] || null
-  )
+  const [selectedMember, setSelectedMember] =
+    useState<SpeakerMemberType | null>(members[0] || null)
 
   const handleMemberHover = (member: SpeakerMemberType) => {
     setSelectedMember(member)
